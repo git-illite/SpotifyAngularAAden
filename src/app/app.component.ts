@@ -6,7 +6,7 @@
 * 
 *  Name: Abdalla Aden Student ID: 021-720-057 Date: 08/17/22
 *
-*  Angular App (Deployed) Link: _____________________________________________________
+*  Angular App (Deployed) Link: https://fabulous-nougat-35a850.netlify.app/
 *
 *  User API (Heroku) Link: https://still-hollows-26017.herokuapp.com/api/user
 *
