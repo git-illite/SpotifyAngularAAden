@@ -1,0 +1,26 @@
+<h1>{{artist.name}}</h1>
+<p>Full discography for {{artist.name}}<br />
+    Click the <strong>album cover</strong> for more information.</p>
+<br />
+
+<mat-card [style.background]="'url(' + artist.images[0].url + ') no-repeat center center'"
+    [style.background-size]="'cover'" [style.height]="'450px'">
+</mat-card>
+<br /><br />
+<h1>Full Discography</h1>
+
+<div fxLayout="row wrap" fxLayout.xs="column">
+    <div fxFlex *ngFor="let album of albums" [style.margin]="'20px'">
+        <mat-card [style.min-width]="'200px'">
+            <mat-card-header>
+                <mat-card-title>{{album.name}}</mat-card-title>
+                <mat-card-subtitle>Album Title</mat-card-subtitle>
+            </mat-card-header>
+
+            <img [routerLink]="['/album', album.id]" mat-card-image class="album-cover" [src]="album.images[0].url" alt="album art">
+            <strong>Release Date: </strong>{{album.release_date | date: 'shortDate'}}<br />
+            <strong>Tracks: </strong>{{album.total_tracks}}
+
+        </mat-card>
+    </div>
+</div>
