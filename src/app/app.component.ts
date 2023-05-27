@@ -8,7 +8,7 @@
 *
 *  Angular App (Deployed) Link: https://stellar-pudding-3ef9f8.netlify.app/
 *
-*  User API (Heroku) Link: https://still-hollows-26017.herokuapp.com/api/user
+*  User API (Heroku) Link: https://spotifyangularapi-production.up.railway.app/api/user
 *
 ********************************************************************************/ 
 
